@@ -1,5 +1,4 @@
 
-
 <div class="container">
   
 <table class='table'>
@@ -11,12 +10,12 @@
   <tr>
 	  <th>introduction</th>
 	  <th><%= user.introduction %></th>
-  
    </tr>
+ 
   <div class="form-group">
-   <% if @user.id == current_user.id %>
-      <%= link_to "", edit_user_path(@user), class:"btn btn-outline-secondary btn-block fas fa-user-cog" %>
-   <% end %>
+   
+      <%= link_to "", edit_user_path(user), class:"btn btn-outline-secondary btn-block fas fa-user-cog" %>
+  
   </div>
   </tr>
 </table>
